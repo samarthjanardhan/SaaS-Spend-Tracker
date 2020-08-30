@@ -1,5 +1,5 @@
 # SaaS-Spend-Tracker
-Manage SaaS business spends, add products to company, track other company products and see pricing trends for SaaS. <br />
+Google Chrome extension that manage SaaS business spends, add products to company, track other company products and see pricing trends for SaaS. <br />
 Input: User should mention the details about the subscription taken of a product along with the required details <br />
 Output: Graphical representation of expenditure of the user  <br />
  <br />
