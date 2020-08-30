@@ -1,0 +1,30 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 40%;
+  text-align: center;
+}
+
+th {
+  border: 1px solid #008cba;
+  background-color: #008cba;
+  color: #ffffff;
+  padding: 5px;
+}
+
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}

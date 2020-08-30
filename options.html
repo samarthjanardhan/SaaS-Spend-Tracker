@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SaaS Spend Tracker Options</title>
+    <link rel="stylesheet" href="options.css" />
+    <!-- scripts -->
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="options.js"></script>
+    <script src="canvas.min.js"></script>
+    <script src="canvasjs.min.js"></script>
+  </head>
+  <body>
+    <div align="center">
+      <h1>SaaS Spend Tracker Options</h1>
+      <h2>Limit: <input id="limit" type="text" /></h2>
+      <h2>
+        Total SaaS Spending :<span id="total"
+          ><script type="text/javascript">
+            document.write(total);
+          </script></span
+        >
+      </h2>
+      <input id="saveLimit" type="submit" value="Save Limit" />
+      <input id="resetTotal" type="submit" value="Reset Total" />
+
+      <h2>Enter Spending on SaaS applications :</h2>
+
+      <!-- input of monthly spending -->
+
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Spending</th>
+            <th>Number of Users</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>January</td>
+          <td>
+            <input type="number" name="jan" id="jan" /><span id="jan"
+              ><script type="text/javascript">
+                document.write(jan);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="jan_u" id="jan_u" />
+            <span id="jan_u"
+              ><script type="text/javascript">
+                document.write(jan_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>February</td>
+          <td>
+            <input type="number" name="feb" id="feb" /><span id="feb"
+              ><script type="text/javascript">
+                document.write(feb);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="feb_u" id="feb_u" />
+            <span id="feb_u"
+              ><script type="text/javascript">
+                document.write(feb_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>March</td>
+          <td>
+            <input type="number" name="mar" id="mar" /><span id="mar"
+              ><script type="text/javascript">
+                document.write(mar);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="mar_u" id="mar_u" /><span id="mar_u">
+              <script type="text/javascript">
+                document.write(mar_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>April</td>
+          <td>
+            <input type="number" name="apr" id="apr" /><span id="apr"
+              ><script type="text/javascript">
+                document.write(apr);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="apr_u" id="apr_u" /><span id="apr_u">
+              <script type="text/javascript">
+                document.write(apr_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>May</td>
+          <td>
+            <input type="number" name="may" id="may" /><span id="may"
+              ><script type="text/javascript">
+                document.write(may);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="may_u" id="may_u" /><span id="may_u">
+              <script type="text/javascript">
+                document.write(may_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>June</td>
+          <td>
+            <input type="number" name="jun" id="jun" /><span id="jun"
+              ><script type="text/javascript">
+                document.write(jun);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="jun_u" id="jun_u" /><span id="jun_u">
+              <script type="text/javascript">
+                document.write(jun_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>July</td>
+          <td>
+            <input type="number" name="jul" id="jul" /><span id="jul"
+              ><script type="text/javascript">
+                document.write(jul);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="jul_u" id="jul_u" /><span id="jul_u">
+              <script type="text/javascript">
+                document.write(jul_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>August</td>
+          <td>
+            <input type="number" name="aug" id="aug" /><span id="aug"
+              ><script type="text/javascript">
+                document.write(aug);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="aug_u" id="aug_u" /><span id="aug_u">
+              <script type="text/javascript">
+                document.write(aug_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>September</td>
+          <td>
+            <input type="number" name="sept" id="sept" /><span id="sept"
+              ><script type="text/javascript">
+                document.write(sept);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="sept_u" id="sept_u" /><span id="sept_u">
+              <script type="text/javascript">
+                document.write(sept_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>October</td>
+          <td>
+            <input type="number" name="oct" id="oct" /><span id="oct"
+              ><script type="text/javascript">
+                document.write(oct);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="oct_u" id="oct_u" /><span id="oct_u">
+              <script type="text/javascript">
+                document.write(oct_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>November</td>
+          <td>
+            <input type="number" name="nov" id="nov" /><span id="nov"
+              ><script type="text/javascript">
+                document.write(nov);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="nov_u" id="nov_u" /><span id="nov_u">
+              <script type="text/javascript">
+                document.write(nov_u);
+              </script></span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>December</td>
+          <td>
+            <input type="number" name="dec" id="dec" /><span id="dec"
+              ><script type="text/javascript">
+                document.write(dec);
+              </script></span
+            >
+          </td>
+
+          <td>
+            <input type="number" name="dec_u" id="dec_u" /><span id="dec_u">
+              <script type="text/javascript">
+                document.write(dec_u);
+              </script></span
+            >
+          </td>
+        </tr>
+      </table>
+
+      <input id="TotalSpend" type="submit" value="Show Annual Spending" />
+      <br />
+      <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+      <br />
+    </div>
+
+    <form align="center">
+      <input type="text" id="name" placeholder="SaaS Application Name" />
+      <input type="number" id="price" placeholder="Pricing" />
+      <input type="number" id="tax" placeholder="Tax (if applicable)" />
+      <select id="time">
+        <option value="None">-- Select --</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Yearly" selected>Yearly</option>
+      </select>
+      <input type="button" class="add-row" value="Add another SaaS App" />
+    </form>
+    <table cellspacing="50" id="spending_table" align="center">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>SaaS Application Name</th>
+          <th>Pricing</th>
+          <th>Paying Cycle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" name="record" /></td>
+          <td>SalesForce(Example)</td>
+          <td>5000</td>
+          <td>Monthly</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div align="center">
+      <button type="button" class="delete-row">Delete Row</button>
+
+      <button type="button" class="totalsales">show total</button>
+    </div>
+
+    <h2>
+      Total Montly SaaS Spending :
+      <p id="total_monthly_sales"></p>
+    </h2>
+
+    <div id="piechartContainer" style="height: 370px; width: 100%;"></div>
+  </body>
+</html>
